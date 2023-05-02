@@ -6,9 +6,8 @@ from dino_runner.utils.constants import RUNNING, JUMPING, DUCKING
 class Dinosaur:
     X_POS = 80
     Y_POS = 310
-    Y_DUCK = 360
+    Y_DUCK = 340
     JUMP_SPEED = 8.5
-    DUCK_SPEED = 8.5
 
     def __init__(self):
         self.image = RUNNING[0]
@@ -22,19 +21,18 @@ class Dinosaur:
         self.dino_jump = False
         self.jump_speed = self.JUMP_SPEED 
         self.dino_duck = False
-        self.duck_speed = self.DUCK_SPEED
-        
+
 
     def update(self, user_imput):
-        #si el dino esta corriendo es True
+        
         if self.dino_run :
             self.run()
 
-        #colocar en 0 step_index cuando es > a 10
+        
         if self.step_index > 10:
             self.step_index = 0
 
-        #si el dino esta saltando es True
+        
         if self.dino_jump :
             self.jump()   
 
