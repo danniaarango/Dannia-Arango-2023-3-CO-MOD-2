@@ -1,9 +1,10 @@
 import pygame
 
 from dino_runner.utils.constants import FONT_STYLE
+#from dino_runner.components.menu import Menu
 
 class Counter:
-    def __init(self):
+    def __init__(self):
         self.count = 0
 
     def update(self):
@@ -15,7 +16,7 @@ class Counter:
         text_rect = text.get_rect()
         text_rect.center = (1000, 50)
         screen.blit(text, text_rect)
-
+        
     def reset(self):
         self.count = 0
 
