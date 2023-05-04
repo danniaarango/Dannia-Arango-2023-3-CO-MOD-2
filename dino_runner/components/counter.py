@@ -1,7 +1,6 @@
 import pygame
 
 from dino_runner.utils.constants import FONT_STYLE
-#from dino_runner.components.menu import Menu
 
 class Counter:
     def __init__(self):
