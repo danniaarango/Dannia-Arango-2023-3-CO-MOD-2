@@ -4,8 +4,8 @@ import pygame
 from pygame.sprite import Sprite
 from dino_runner.utils.constants import SCREEN_WIDTH
 
-
 class Powerup(Sprite):
+    
     def __init__(self, image, type):
         self.image = image
         self.type = type
